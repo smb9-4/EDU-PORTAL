@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='STUDENT_SEC/Attendence.css') }}">
+  
+</head>
+<body>
+  <header class="navbar">
+    <h1>📊 Attendance</h1>
+    <a href="Academic.html">⬅ Back to Dashboard</a>
+  </header>   
+
+  <main class="main-content">
+    <p>Here you can track your attendance and participation.</p>
+
+    <!-- Summary Cards -->
+    <div class="cards-container">
+      <div class="card">
+        <p>Total Classes</p>
+      </div>
+      <div class="card">
+        <p>Attended</p>
+      </div>
+      <div class="card">
+        <p>Attendance</p>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-card">
+      <h3>📈 Overall Attendance</h3>
+      <div class="progress">
+        <div class="progress-bar">  </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

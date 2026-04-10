@@ -1,0 +1,155 @@
+/* Reset + Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+header {
+  display:flex;
+  /* extra bg if needed */
+  /* background: linear-gradient(to right, rgb(125, 87, 140),rgb(175, 29, 194)); */
+  color: white;
+  align-items: center;
+  padding: 20px;
+  height: 100px;
+  background: linear-gradient(to right, #6a1b9a, #9c27b0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#quote {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-left: auto;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(20px); }
+  20% { opacity: 1; transform: translateX(0); }
+  80% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(20px); }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+body {
+    background: #f3f0f9;
+    color: #333;
+    line-height: 1.6;
+}
+/* Container */
+#container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Card Layout */
+.card {
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #6a1b9a;
+}
+
+/* Timetable Grid */
+#tt-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: clamp(220px, 40%, 350px);
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(180, 88, 222);
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    background: rgb(169, 53, 198)
+}
+
+.sem {
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.sem:hover {
+    text-decoration: underline;
+}
+
+/* Assignments */
+.assignments-list {
+    list-style: none;
+}
+
+.assignments-list li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Grades Section */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.calc a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    background: #9c27b0;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.calc a:hover {
+    background: #6a1b9a;
+}
+
+.info {
+    font-size: 14px;
+    color: #555;
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    background: #eee;
+    font-size: 14px;
+}

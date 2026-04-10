@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='STUDENT_SEC/Studash.css') }}">
+  <title>STUDENT DASHBOARD</title>
+  <script>
+    // Toggle dropdown menus
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("nav ul li").forEach(li => {
+        li.addEventListener("click", (e) => {
+          if (li.querySelector("ul")) {
+            li.classList.toggle("active");
+            e.stopPropagation();
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<header><p id="name">Student Portal</p>
+  <div id="quote">Bridging the gap between knowledge givers and knowledge seekers.</div>
+</header>
+
+<body>
+
+  <div class="container">
+    <nav>
+      <ul>
+        <li>👤 Profile
+          <ul>
+            <li>Personal Information</li>
+            <a href="{{ url_for('aca') }}"><li>Academic Details</li></a>
+          </ul>
+        </li>
+        <li>📊 Schedules
+          <ul>
+            <a  href="{{ url_for('AN') }}"><li>Quick Links (Timetable, Assignments, Grades)</li></a>
+            <a  href="{{ url_for('event') }}"><li>Upcoming Events & Deadlines</li></a>
+            <a  href="{{ url_for('attendance') }}"><li>Attendance Summary</li></a>
+          </ul>
+        </li>
+        <li>📚 Academics
+          <ul>
+            <li>Timetable</li>
+            <a href="{{ url_for('cor') }}"><li>Courses & Syllabus</li></a>
+            <li>Study Materials</li>
+            <li>Assignments (View / Submit)</li>
+            <a href="{{ url_for('grade') }}"><li>Grades & Marksheets</li></a>
+            <li>Attendance</li>
+          </ul>
+        </li>
+        <li>🆘 Help & Support
+          <ul>
+            <a href="{{ url_for('technical') }}"><li>FAQs</li></a>
+            <a href="{{ url_for('communicate') }}"><li>Contact Faculties</li></a>
+            <li>Technical Support</li>
+          </ul>
+        </li>
+        <a href="{{ url_for('logout') }}"><li>🚪 Logout</li></a>
+      </ul>
+    </nav>
+
+    <main>
+      <h2 id="wel">Welcome  {{username}}</h2>
+      <div id="ann">
+        ANNOUNCEMENTS
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* background: linear-gradient(to bottom right, #fdfbff, #f1ebf7); */
+  /* extra */
+  background: linear-gradient(to bottom right, #f5f0ff, #fdf8fe);
+}
+
+header {
+  display:flex;
+  /* extra bg if needed */
+  /* background: linear-gradient(to right, rgb(125, 87, 140),rgb(175, 29, 194)); */
+  color: white;
+  align-items: center;
+  padding: 20px;
+  height:60px;
+  font-size: 20px;
+  background: linear-gradient(to right, #6a1b9a, #9c27b0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#headline {
+    font-family:sans-serif;
+    display: inline-block;
+    position: relative;
+    font-size: 58px;
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px; 
+}
+#headline:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+
+#quote {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-left: auto;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(20px); }
+  20% { opacity: 1; transform: translateX(0); }
+  80% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(20px); }
+}
+
+
+#logo {
+  height:75px;
+  width:75px;
+  padding:10px;
+  border: 50%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  height:320px;
+  margin-top: 15px;
+}
+.welcome-section {
+  text-align: center;
+  margin: 50px 0 30px;
+}
+.welcome-section p {
+  font-family: 'Karla', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #333;
+}
+
+#welcome-title {
+  font-family: 'Karla', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  animation: fadeInScale 3s ease forwards;
+}
+
+#welcome-title {
+    font-size: 58px;
+    color: #9c27b0; 
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px; 
+}
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.welcome-subtitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #6a1b9a;
+  display: inline-block;
+  width: 0;
+  animation: typing 3s steps(20, end) 1s forwards, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; } /* HERE CHARECTERS NEEDS TO BE COUNTED AND ADDED + 1 CHAR, BECAUSE ITS GETTING INSIDE*/
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.box {
+  color: #8F22C2;
+  background-color: white;
+  border-radius: 12px;
+  padding: 40px;
+  width: 400px;
+  height:200px;
+  box-shadow: 4px 4px 6px rgba(106, 2, 138, 0.1);
+  font-size: 28px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+
+  /* THIS PART IS TO CORRECTLY PLACE THE BOXES IN PLACE */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  
+  padding-top: 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 4px 4px 3px rgb(146, 6, 171);
+} */
+
+.box {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(238, 0, 255, 0.3), rgba(162, 2, 242, 0.3));
+    transition: top 0.4s ease;
+}
+
+.box h3, .box p {
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.box:hover {
+    color:#6a1b9a;
+    transform: scale(1.05);
+    font-size:34px;
+    box-shadow: 0 12px 30px rgba(159, 25, 232, 0.4);
+
+}
+
+.box:hover::before {
+    top: 0;
+}
+
+footer {
+  background-color: rgb(99, 30, 150);
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+
+#student-icon,
+#prof-icon,
+#contact-icon {
+  font-size: 45px;
+  margin-top: 50px;
+  font-size: 70px;
+}
+
+
+#explore{
+  font-size:50px;
+  color: #6a0dad;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#about{
+  font-size:24px;
+  color: #6a0dad;
+  margin-bottom: 20px;
+}
+
+/* #but:hover{
+  color:red;
+} */
+
+#abouts{
+  font-size:36px;
+  color:#6a0dad;
+  margin-top:25px;
+  font-weight: 600;
+}
+
+#desc{
+  color:#6a0dad;
+  margin:20px;
+  font-size: 22px;
+  font-weight:300;
+}
+
+a{
+  text-decoration: none;
+  color:#6a1b9a;
+}

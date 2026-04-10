@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* background: linear-gradient(to bottom right, #fdfbff, #f1ebf7); */
+  /* extra */
+  background: linear-gradient(to bottom right, #f5f0ff, #fdf8fe);
+}
+
+header {
+  display:flex;
+  /* extra bg if needed */
+  /* background: linear-gradient(to right, rgb(125, 87, 140),rgb(175, 29, 194)); */
+  color: white;
+  align-items: center;
+  padding: 20px;
+  height:60px;
+  font-size: 20px;
+  background: linear-gradient(to right, #6a1b9a, #9c27b0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#headline {
+    font-family:sans-serif;
+    display: inline-block;
+    position: relative;
+    font-size: 58px;
+    color: #ffffff; 
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 50px; 
+}
+#headline:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgba(255,255,255,0.6);
+}
+
+
+#quote {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-left: auto;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(20px); }
+  20% { opacity: 1; transform: translateX(0); }
+  80% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(20px); }
+}
+
+
+#logo {
+  height:75px;
+  width:75px;
+  padding:10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  height:320px;
+  margin-top: 15px;
+}
+/* General section */
+#administration {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: auto;
+}
+
+#administration h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: rgb(99, 30, 150);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Card styling */
+.admin-card {
+  background: #f9f9ff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Titles */
+.admin-card h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+/* Text */
+.admin-card p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons */
+.admin-card button {
+  margin-right: 10px;
+  padding: 8px 14px;
+  background-color: rgb(99, 30, 150);;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.admin-card button:hover {
+  background-color:  rgb(99, 30, 150);
+}
+footer {
+  background-color: rgb(99, 30, 150);
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}

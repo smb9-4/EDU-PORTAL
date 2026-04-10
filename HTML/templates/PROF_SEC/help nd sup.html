@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help & Support -Teacher's Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='PROF_SEC/help nd sup.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-circle-question"></i> Help & Support</h1>
+    <div id="quote">Bridging the gap between knowledge givers and knowledge seekers.</div>
+
+  </header>
+
+  <main>
+    <!-- Search Bar -->
+    <section class="search-section">
+      <input type="text" placeholder="Search your issue...">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+            <summary>How do I reset my password?</summary>
+            <p>You can reset your password by going to Settings → Security → Reset Password.</p>
+        </details>
+
+        <details>
+            <summary>How do I contact support?</summary>
+            <p>Use the Contact Support form in the Help & Support section, or email us at support@eduportal.com.</p>
+        </details>
+
+        <details>
+            <summary>Where can I see my class schedule or examinatins?</summary>
+            <p>Your class schedule is available in the Dashboard → Class Search section.</p>
+        </details>
+        <details>
+            <summary>How do I upload marks after exams?</summary>
+            <p>open student , fill the student portal , and submit it online..</p>
+        </details>
+        <details>
+            <summary>How do I upload study material or notes for students?</summary>
+            <p>Navigate to courses ,Upload materials.supported file types:PDF,DOCX,PPT</p>
+        </details>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact Support</h2>
+      <p>Email: <a href="mailto:support@studentportal.com">support@eduportal.com</a></p>
+      <p>Phone: +91 98765 43210</p>
+      <p>WhatsApp: <a href="#">Click to Chat</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teacher's Portal | Help & Support</p>
+  </footer>
+</body>
+</html>

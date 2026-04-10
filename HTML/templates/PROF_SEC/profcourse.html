@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses & Classes</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='PROF_SEC/profcourse.css)}}">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">📖 Academics </h1>
+    </div>
+  </nav>
+
+  <!-- COURSES & CLASSES -->
+  <section class="section" id="courses-classes">
+    <div class="section-box">
+      <div class="section-head">
+        <div class="icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+        <div>
+          <h2>Courses &amp; Classes</h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Course Materials -->
+        <article class="card">
+          <div class="card-top">
+            <div class="badge"><i class="fa-regular fa-folder-open"></i></div>
+            <h3>Course Materials</h3>
+          </div>
+          <p>Upload slides, notes, lab files, and edit existing content by class or topic.</p>
+          <div class="actions">
+            <button class="btn primary">Upload</button>
+            <button class="btn  primary">Edit</button>
+          </div>
+        </article>
+
+        <!-- Assignments -->
+        <article class="card">
+          <div class="card-top">
+            <div class="badge"><i class="fa-regular fa-rectangle-list"></i></div>
+            <h3>Assignments</h3>
+          </div>
+          <p>Create, publish, and grade assignments. Track submissions and late work.</p>
+          <div class="actions">
+            <button class="btn primary">Create</button>
+            <button class="btn  primary">Manage</button>
+            <button class="btn  primary">Grade</button>
+          </div>
+        </article>
+
+        <!-- Attendance -->
+        <article class="card">
+          <div class="card-top">
+            <div class="badge"><i class="fa-solid fa-user-check"></i></div>
+            <h3>Attendance</h3>
+          </div>
+          <p>Mark daily attendance, edit entries, and generate attendance reports.</p>
+          <div class="actions">
+            <button class="btn primary">Mark</button>
+            <button class="btn  primary">Edit</button>
+            <button class="btn  primary">Reports</button>
+          </div>
+        </article>
+
+        <!-- Exam Papers -->
+        <article class="card">
+          <div class="card-top">
+            <div class="badge"><i class="fa-solid fa-file-circle-check"></i></div>
+            <h3>Exam Papers</h3>
+          </div>
+          <p>Upload question papers and enter results for your classes.</p>
+          <div class="actions">
+            <button class="btn primary">Upload</button>
+            <button class="btn  primary">Results Entry</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

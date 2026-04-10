@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* background: linear-gradient(to bottom right, #fdfbff, #f1ebf7); */
+  /* extra */
+  background: linear-gradient(to bottom right, #f5f0ff, #fdf8fe);
+}
+
+header {
+  display:flex;
+  /* extra bg if needed */
+  /* background: linear-gradient(to right, rgb(125, 87, 140),rgb(175, 29, 194)); */
+  color: white;
+  align-items: center;
+  padding: 20px;
+  height:60px;
+  font-size: 20px;
+  background: linear-gradient(to right, #6a1b9a, #9c27b0);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#quote {
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-left: auto;
+  opacity: 0;
+  animation: fadeInOut 6s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateX(20px); }
+  20% { opacity: 1; transform: translateX(0); }
+  80% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(20px); }
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #6a11cb;
+}
+
+.search-section {
+  display: flex;
+  justify-content: center;
+  height:45px;
+  gap: 20px;
+  font-size:30px;
+}
+
+.search-section input {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size:18px;
+}
+
+.search-section button {
+  padding: 10px 15px;
+  background: #6a11cb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-section h2{
+    color: #6b21a8;
+    font-size:40px;
+}
+.contact-section p{
+    font-size:20px;
+}
+
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+  font-size:40px;
+}
+
+.faq-section li {
+  margin: 8px 0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.faq {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: left;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6b21a8;
+  font-size:40px;
+}
+
+details {
+  background: #f9f9ff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-size:20px;
+}
+
+details:hover {
+  background: #f0eaff;
+}
+
+summary {
+  font-weight: bold;
+  color: #4a148c;
+  list-style: none;  
+  position: relative;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "▶";
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+
+

@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: white;
+  color: #e8ecf3;
+  line-height: 3.5;
+}
+
+.navbar {
+  background: purple;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 18px 0;
+}
+
+.nav-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0px;
+  display: flex;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.section {
+  padding: 40px 20px;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.section-box {
+  width: 100%;
+  max-width: 1200px;
+  background: #171b22;
+  border: 2px solid #2a3140;
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1.5px dashed #2a3140;
+}
+
+.section-head .icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #2a3140;
+  border-radius: 12px;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.section-head p {
+  margin: 2px 0 0;
+  color: #a8b0bd;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  background: #1d232f;
+  border: 2px solid #2a3140;
+  border-radius: 14px;
+  padding: 18px;
+  transition: 0.2s;
+}
+.card:hover {
+  border-color: #3a4254;
+  transform: translateY(-2px);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.card .badge {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #2a3140;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card p {
+  margin: 6px 0;
+  color: #a8b0bd;
+  font-size: 14px;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 7px 12px;
+  border-radius: 10px;
+  border: 2px solid #2a3140;
+  background: #11151b;
+  color: #e8ecf3;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border-color: #3a4254;
+}
+
+.btn.primary {
+  background: #2dd4bf;
+  color: #0b1414;
+  border-color: transparent;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDU PORTAL</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='ho-style.css') }}">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+</head>
+<body>
+  <header>
+    <img id="logo" src="static/logo.jpg" alt="logo">
+    <div id="headline">Edu Portal</div>
+    <div id="quote">Bridging the gap between knowledge givers and knowledge seekers.</div>
+  </header>
+
+  <section class="welcome-section">
+    <div id="welcome-title">Welcome to Edu Portal</div>
+    <p class="welcome-subtitle">Who is using this?</p>
+  </section>
+
+
+  <!-- <div class="container">
+
+    <div class="box">
+      Student
+      <i class="fa-solid fa-graduation-cap" id="student-icon"></i>
+    </div>
+
+    <div class="box">
+      Faculties
+      <i class="fa-solid fa-chalkboard-user" id="prof-icon"></i>
+    </div>
+
+    <div class="box">
+      Contact Support
+      <i class="fa-solid fa-headset" id="contact-icon"></i>
+    </div> -->
+  <div class="container">
+
+    <div class="box" onclick="window.location.href='/student_login'">
+      <a href="/student_login">Student Section</a>
+
+      <i class="fa-solid fa-graduation-cap" id="student-icon"></i>
+    </div>
+
+    <div class="box" onclick="window.location.href='/professor-login'">
+      <a href="/professor-login">Faculties</a>
+      <i class="fa-solid fa-chalkboard-user" id="prof-icon"></i>
+    </div>
+
+    <div class="box" onclick="window.location.href='/contact'">
+      <a href="/contact">Contact Support</a>
+      <i class="fa-solid fa-headset" id="contact-icon"></i>
+    </div>
+
+  </div>
+
+
+  </div>
+  <section class="explore-section">
+    <h2 id="explore">Let's Explore College</h2>
+    <div id="about">GMIT (GM Institute of Technology), located in Davangere, Karnataka, is a renowned engineering college established to provide quality technical education. Affiliated with Visvesvaraya Technological University (VTU), Belagavi, and approved by AICTE, New Delhi, GMIT offers undergraduate and postgraduate programs in various engineering disciplines. The college focuses on academic excellence, innovation, and practical learning through state-of-the-art infrastructure, well-equipped laboratories, and experienced faculty. It promotes holistic development through technical events, cultural programs, and sports activities. With strong industry connections, GMIT ensures good placement opportunities for students. Its commitment to research and skill development makes it a preferred institution in the region.
+    <!-- <iframe src="https://www.youtube.com/watch?v=AUczZ9-b6ho&t=296s"></iframe> -->
+
+    </div>
+  </section>
+
+  <div id="abouts">About Us</div>
+
+  <div id="desc">Welcome to Edu Portal, a dynamic platform designed to connect students, teachers, and resources in one seamless experience. Our mission is to simplify learning by providing access to study materials, interactive sessions, and real-time updates about college activities.
+
+  We aim to empower students with knowledge, teachers with efficient teaching tools, and create a collaborative environment that drives success. Whether you're here to learn, teach, or share ideas, our portal is your gateway to growth and excellence.
+
+  </div>
+
+
+  <footer>
+    <p>&copy; 2025 Edu Portal | All Rights Reserved</p>
+    <p>Contact: support@studentportal.com</p>
+  </footer>
+
+</body>
+</html>

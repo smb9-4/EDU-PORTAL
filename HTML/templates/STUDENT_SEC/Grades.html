@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grades</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='STUDENT_SEC/Grades.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <h1>📝 Grades</h1>
+    <a href="Academic.html">⬅ Back to Dashboard</a>
+  </header>
+
+  <main class="main-content">
+    <p>Here you can check your grades and marksheets.</p>
+
+    
+    <div class="cards-container">
+      <div class="card">
+        <h3>Current GPA</h3>
+      </div>
+      <div class="card">
+        <h3>Total Credits</h3>
+      </div>
+      <div class="card">
+        <h3>Subjects Passed</h3>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <h3>📑 Subject-wise Grades</h3>
+      <table class="grades-table">
+        <tr>
+          <th>Subject</th>
+          <th>Credits</th>
+          <th>Grade</th>
+          <th>Grade Points</th>
+        </tr>
+       
+      <a href="#" class="download-btn">⬇ Download Marksheet</a>
+    </div>
+  </main>
+</body>
+</html>  

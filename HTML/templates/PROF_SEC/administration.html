@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration Section</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='PROF_SEC/administration') }}">
+</head>
+<body>
+  <header>
+    <img id="logo" src="Logo.jpg" alt="logo">
+    <div id="headline">Edu Portal</div>
+    <div id="quote">Bridging the gap between knowledge givers and knowledge seekers.</div>
+  </header>
+
+  <section id="administration">
+    <h2>🏛 Administration</h2>
+
+    <!-- Fee Payment -->
+    <div class="admin-card">
+      <h3>💳 Fee Payment & Receipts</h3>
+      <p>Pay your semester fees online and download past receipts.</p>
+      <button onclick="alert('Redirecting to Fee Payment Portal...')">Pay Fees</button>
+      <button onclick="alert('Downloading Receipt...')">Download Receipt</button>
+    </div>
+
+    <!-- Document Requests -->
+    <div class="admin-card">
+      <h3>📄 Document Requests</h3>
+      <p>Request bonafide certificates, transcripts, or other official documents.</p>
+      <button onclick="alert('Submitting Document Request...')">Request Document</button>
+    </div>
+
+    <!-- Leave Applications -->
+    <div class="admin-card">
+      <h3>📝 Leave Applications</h3>
+      <p>Submit leave applications and track approval status.</p>
+      <button onclick="alert('Submitting Leave Application...')">Apply for Leave</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Portal | All Rights Reserved</p>
+    <p>Contact: support@studentportal.com</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickLinks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='STUDENT_SEC/Quciklink.css') }}">
+    <!-- Font Awesome (Correct Version) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<!-- Header -->
+<header>
+    <h1>Quick Links</h1>
+    <div id="quote">Bridging the gap between knowledge givers and knowledge seekers.</div>
+</header>
+
+<body>
+    <main id="container">
+        <!-- Timetable Section -->
+        <section class="card">
+            <h2 class="section-title">Timetable</h2>
+            <div id="tt-grid">
+                <div class="box">
+                    <strong>1st Year:</strong>
+                    <a href="#" class="sem">1st Semester</a>
+                    <a href="#" class="sem">2nd Semester</a>
+                </div>
+                <div class="box">
+                    <strong>2nd Year:</strong>
+                    <a href="#" class="sem">3rd Semester</a>
+                    <a href="#" class="sem">4th Semester</a>
+                </div>
+                <div class="box">
+                    <strong>3rd Year:</strong>
+                    <a href="#" class="sem">5th Semester</a>
+                    <a href="#" class="sem">6th Semester</a>
+                </div>
+                <div class="box">
+                    <strong>4th Year:</strong>
+                    <a href="#" class="sem">7th Semester</a>
+                    <a href="#" class="sem">8th Semester</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignments Section -->
+        <section class="card">
+            <h2 class="section-title">Assignments</h2>
+            <ul class="assignments-list">
+                <li><i class="fa-solid fa-file-lines" style="color: blueviolet;"></i> Find all your assignments here
+                </li>
+                <li><i class="fa-solid fa-cloud-upload-alt" style="color: blueviolet;"></i> Upload your submissions</li>
+                <li><i class="fa-solid fa-check-circle" style="color: blueviolet;"></i> Track completed assignments</li>
+            </ul>
+        </section>
+
+        <!-- Grades Section -->
+        <section class="card">
+            <h2 class="section-title">Grades</h2>
+            <p class="info"><i class="fa-solid fa-caret-right"></i> All your necessary tools in one place!</p>
+            <br>
+            <div class="grid">
+                <div class="calc"><a href="#" target="_blank">C Cycle</a></div>
+                <div class="calc"><a href="#" target="_blank">P Cycle</a></div>
+                <div class="calc"><a href="https://results.vtu.ac.in/" target="_blank">VTU Results</a></div>
+                <div class="calc"><a href="https://www.vtulife.in/vtu-sgpa-cgpa-calculator/sgpa" target="_blank">SGPA
+                        Calculator</a></div>
+                <div class="calc"><a href="https://www.vtulife.in/vtu-sgpa-cgpa-calculator/cgpa" target="_blank">CGPA
+                        Calculator</a></div>
+                <div class="calc"><a href="https://www.vtulife.in/vtu-sgpa-cgpa-calculator/percentage"
+                        target="_blank">Percentage Calculator</a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy 2025 Edu Portal</p>
+    </footer>
+</body>
+
+</html>

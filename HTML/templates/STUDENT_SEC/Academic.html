@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Academic Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='STUDENT_SEC/Academic.css') }}">
+</head>
+<body> 
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <h1>📖 Student Academics</h1>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <section id="courses" class="card">
+      <h2>📚 Courses & Syllabus</h2>
+      <p>View and download your course syllabus here.</p>
+      <ul>
+        <li><a href="#">Go to Courses</a></li>
+      </ul>
+    </section>
+
+    <section id="grades" class="card">
+      <h2>📝 Grades</h2>
+      <p>Check your grades and marksheets securely.</p>
+      <ul>
+        <li><a href="#">View Grades</a></li>
+      </ul>
+    </section>
+
+    <section id="attendance" class="card">
+      <h2>📊 Attendance</h2>
+      <p>Track your attendance and participation.</p>
+      <ul>
+        <li><a href="#">Check Attendance</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Student Portal | Academic Dashboard</p>
+  </footer>
+
+</body>
+</html>
