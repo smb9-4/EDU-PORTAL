@@ -1,0 +1,1 @@
+Edu Portal is a web-based application designed to simplify academic management by providing a centralized platform for students and administrators. It allows users to manage assignments, share resources, and streamline communication within an educational environment.
