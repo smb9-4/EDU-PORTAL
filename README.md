@@ -1,2 +1,1 @@
-# EDU-PORTAL
-Description: Ring-X is a web-based alarm management system built using Python and web technologies, designed to help users create and manage personalized alarms efficiently.  Features:  Custom alarm scheduling through web interface Task-based alarm dismissal system User-friendly and responsive design Dynamic interaction using Python backend 
+Edu Portal is a web-based application designed to simplify academic management by providing a centralized platform for students and administrators. It allows users to manage assignments, share resources, and streamline communication within an educational environment.
